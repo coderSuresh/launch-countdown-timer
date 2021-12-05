@@ -1,0 +1,53 @@
+@media (max-width: 915px) {
+    .socials {
+        bottom: 30px;
+    }
+
+    .container {
+        div {
+            height: 100px;
+            width: 100px;
+            font-size: 3rem;
+        }
+    }
+}
+
+@media (max-width: 565px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        div {
+            height: 80px;
+            width: 80px;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+@media (max-width: 465px) {
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .container {
+        div {
+            height: 80px;
+            width: 80px;
+            font-size: 2.5rem;
+            margin-top: 60px;
+
+            p {
+                font-size: 12px;
+                bottom: -30px;
+            }
+        }
+    }
+
+    main {
+        background-size: 100% 100px;
+    }
+}

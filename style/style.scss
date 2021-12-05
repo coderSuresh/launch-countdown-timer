@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap');
+
+$grayish-blue: hsl(237, 18%, 59%);
+$soft-red: hsl(345, 95%, 68%);
+$white: hsl(0, 0%, 100%);
+$dark-saturated-blue: hsl(0, 0%, 100%);
+$very-dark-blue: hsl(235, 16%, 14%);
+$mostly-black-blue: hsl(232, 17%, 25%);
+$line: hsl(233, 19%, 35%);
+
+@mixin flexBox($direction, $justify) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+    justify-content: $justify;
+    flex-wrap: wrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    user-select: none;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    text-transform: uppercase;
+    max-width: 1440px;
+    margin: auto;
+    background: url('/images/bg-stars.svg') $very-dark-blue;
+}
+
+main {
+    @include flexBox(column, center);
+    background: url('/images/pattern-hills.svg') no-repeat bottom;
+    background-size: contain;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2rem;
+    color: $dark-saturated-blue;
+    margin-bottom: 60px;
+    letter-spacing: 6px
+}
+
+.container {
+    @include flexBox(row, center);
+    margin-bottom: 180px;
+
+    div {
+        margin: 0 20px;
+        background: $mostly-black-blue;
+        text-align: center;
+        font-size: 4rem;
+        color: $soft-red;
+        height: 130px;
+        width: 130px;
+        @include flexBox(column, center);
+        position: relative;
+
+        P {
+            font-size: 1rem;
+            position: absolute;
+            bottom: -40px;
+            color: $grayish-blue;
+            letter-spacing: 5px;
+        }
+
+        span {
+            // height: 1px;
+            // position: absolute;
+            // background-color: $line;
+            // width: 100%;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0px;
+                width: 5px;
+                height: 10px;
+                background-color: $very-dark-blue;
+                border-radius: 50% 0 0 50%;
+            }
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0px;
+                width: 5px;
+                height: 10px;
+                background-color: $very-dark-blue;
+                border-radius: 0 50% 50% 0;
+            }
+        }
+    }
+}
+
+.socials {
+    position: fixed;
+    bottom: 60px;
+
+    i {
+        font-size: 1.5rem;
+        color: $grayish-blue;
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:hover {
+            color: $soft-red;
+        }
+    }
+}
+
+@import './responsive'

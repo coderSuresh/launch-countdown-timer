@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  font-family: 'Red Hat Display', sans-serif;
+  text-transform: uppercase;
+  max-width: 1440px;
+  margin: auto;
+  background: url("/images/bg-stars.svg") #1e1f29;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: url("/images/pattern-hills.svg") no-repeat bottom;
+  background-size: contain;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 60px;
+  letter-spacing: 6px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 180px;
+}
+
+.container div {
+  margin: 0 20px;
+  background: #35384b;
+  text-align: center;
+  font-size: 4rem;
+  color: #fb6087;
+  height: 130px;
+  width: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+}
+
+.container div P {
+  font-size: 1rem;
+  position: absolute;
+  bottom: -40px;
+  color: #8486a9;
+  letter-spacing: 5px;
+}
+
+.container div span::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0px;
+  width: 5px;
+  height: 10px;
+  background-color: #1e1f29;
+  border-radius: 50% 0 0 50%;
+}
+
+.container div span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0px;
+  width: 5px;
+  height: 10px;
+  background-color: #1e1f29;
+  border-radius: 0 50% 50% 0;
+}
+
+.socials {
+  position: fixed;
+  bottom: 60px;
+}
+
+.socials i {
+  font-size: 1.5rem;
+  color: #8486a9;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.socials i:hover {
+  color: #fb6087;
+}
+
+@media (max-width: 915px) {
+  .socials {
+    bottom: 30px;
+  }
+  .container div {
+    height: 100px;
+    width: 100px;
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 565px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container div {
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 465px) {
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .container div {
+    height: 80px;
+    width: 80px;
+    font-size: 2.5rem;
+    margin-top: 60px;
+  }
+  .container div p {
+    font-size: 12px;
+    bottom: -30px;
+  }
+  main {
+    background-size: 100% 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
