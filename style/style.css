@@ -20,7 +20,7 @@ body {
   text-transform: uppercase;
   max-width: 1440px;
   margin: auto;
-  background: url("/images/bg-stars.svg") #1e1f29;
+  background: url("./images/bg-stars.svg") #1e1f29;
 }
 
 main {
@@ -39,7 +39,7 @@ main {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: url("/images/pattern-hills.svg") no-repeat bottom;
+  background: url("./images/pattern-hills.svg") no-repeat bottom;
   background-size: contain;
   min-height: 100vh;
 }
