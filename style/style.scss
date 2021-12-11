@@ -33,12 +33,12 @@ body {
     text-transform: uppercase;
     max-width: 1440px;
     margin: auto;
-    background: url('/images/bg-stars.svg') $very-dark-blue;
+    background: url('../images/bg-stars.svg') $very-dark-blue;
 }
 
 main {
     @include flexBox(column, center);
-    background: url('/images/pattern-hills.svg') no-repeat bottom;
+    background: url('../images/pattern-hills.svg') no-repeat bottom;
     background-size: contain;
     min-height: 100vh;
 }
