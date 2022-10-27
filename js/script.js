@@ -5,7 +5,7 @@ var second = document.getElementById("secs");
 
 var x = setInterval(function() {
 
-    var launchDate = new Date("Jun 13, 2022 12:00:00").getTime();
+    var launchDate = new Date("Jun 13, 2024 12:00:00").getTime();
     var currentDate = new Date().getTime();
 
     var timeDiff = launchDate - currentDate;
